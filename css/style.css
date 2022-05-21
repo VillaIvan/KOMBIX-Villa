@@ -19,6 +19,13 @@ html {
 body {
   width: 100%;
   min-height: 100%;
+  background: rgb(178, 28, 41);
+  background: linear-gradient(
+    270deg,
+    rgba(178, 28, 41, 0.5) 12%,
+    rgba(197, 131, 59, 0.5046393557422969) 44%,
+    rgba(178, 28, 41, 0.5) 86%
+  );
 }
 .index__grid {
   display: grid;
@@ -83,7 +90,7 @@ main {
   position: relative;
   width: 90%;
   height: 70vh;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .slider__content li {
@@ -410,6 +417,10 @@ footer .media__footer a {
 
 .ul__img {
   width: 300px;
+}
+
+#ul__name li img:hover {
+  transform: scale(1.2);
 }
 
 #bio div ul li {

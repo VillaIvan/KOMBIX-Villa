@@ -8,12 +8,13 @@
     <title>KOMBIX</title>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="event__grid">
         <header>
-            <nav>
+            <nav data-aos="fade-down">
                 <img src="../img/logo3.svg" alt="logo" id="header__img">
                 <ul class="navbar">
                     <!--<li>
@@ -32,10 +33,10 @@
         <main class="list">
             <section>
                 <div class="container">
-                    <h1 id="event__title">PRÓXIMOS SHOWS</h1>
+                    <h1 id="event__title" data-aos="zoom-out" data-aos-duration="2500">PRÓXIMOS SHOWS</h1>
 
                     <h3 id="title">KOMBIX Fechas</h2>
-                        <div id="results">
+                        <div id="results" data-aos="zoom-out-up">
                             <div class="event">
                                 <div class="start">Miercoles 20 de Abril</div>
                                 <div class="location">
@@ -140,19 +141,24 @@
 
                 </div>
             </section>
+
+
+
+
+        </main>
+        <footer>
+            <p>vvvv®</p>
+            <div class="media__footer">
+                <a href="https://www.twitter.com/loskombix" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.instagram.com/kombix/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/loskombix" target="_blank"><i class="bi bi-facebook"></i></a>
+            </div>
+        </footer>
     </div>
-
-
-
-    </main>
-    <footer>
-        <p>vvvv®</p>
-        <div class="media__footer">
-            <a href="https://www.twitter.com/loskombix" target="_blank"><i class="bi bi-twitter"></i></a>
-            <a href="https://www.instagram.com/kombix/" target="_blank"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.facebook.com/loskombix" target="_blank"><i class="bi bi-facebook"></i></a>
-        </div>
-    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

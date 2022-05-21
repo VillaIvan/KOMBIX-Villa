@@ -8,13 +8,14 @@
     <title>KOMBIX</title>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="index__grid">
         <header>
             <!--BARRA DE NAVEGACION-->
-            <nav>
+            <nav data-aos="fade-down">
                 <img src="./img/logo3.svg" alt="logo" id="header__img">
                 <ul class="navbar">
                     <!-- <li>
@@ -54,7 +55,7 @@
         </main>
         <!--PROMOCION DEL ULTIMO DISCO-->
         <div class="div__main">
-            <div class="wrap__video">
+            <div class="wrap__video" data-aos="fade-right">
                 <div class="main__video">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/YaqMliC5LSo"
                         title="YouTube video player" frameborder="0"
@@ -62,7 +63,7 @@
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="main__titles">
+            <div class="main__titles" data-aos="fade-left">
                 <h1>MELANINA</h1>
                 <h2>NUEVO ALBUM ►</h2>
                 <p>"Luego de un periodo de festejos y revisionismo por los 10 años de la banda, llegó el momento de
@@ -90,18 +91,18 @@
         <section class="merch">
             <div class="div__section">
                 <div class="text__merch">
-                    <a href="#">
+                    <a href="#" data-aos="zoom-in">
                         <h2>KOMBIX</h2>
                         <h3>MERCH OFICIAL</h3>
                     </a>
                 </div>
-                <div class="card__merch__left">
+                <div class="card__merch__left" data-aos="fade-right">
                     <a href="#">
                         <img src="./img/merchlarge.jpg" alt="merch1" class="img__merch1">
 
                     </a>
                 </div>
-                <div class="card__merch__right">
+                <div class="card__merch__right" data-aos="fade-left">
                     <a href="#">
                         <img src="./img/merchlarge2.jpg" alt="merch2" class="img__merch2">
                     </a>
@@ -124,6 +125,10 @@
             </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

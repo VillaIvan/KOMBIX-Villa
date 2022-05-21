@@ -8,12 +8,13 @@
     <title>KOMBIX</title>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="galery__grid">
         <header>
-            <nav>
+            <nav data-aos="fade-down">
                 <img src="../img/logo3.svg" alt="logo" id="header__img">
                 <ul class="navbar">
                     <!--<li>
@@ -30,7 +31,7 @@
         </header>
 
         <main class="img__grid">
-            <div class="galery">
+            <div class="galery" data-aos="zoom-out-up">
                 <img src="../img/galeria1.jpg" alt="foto0">
                 <img src="../img/galeria2.jpg" alt="foto1">
                 <img src="../img/galeria6.jpg" alt="foto2">
@@ -54,6 +55,10 @@
             </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
