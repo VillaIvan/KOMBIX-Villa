@@ -14,145 +14,32 @@
   text-decoration: none;
 }
 html {
-  height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
 }
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
 body {
   width: 100%;
   min-height: 100%;
-  background: rgb(178, 28, 41);
-  background: linear-gradient(
-    270deg,
-    rgba(178, 28, 41, 0.5) 12%,
-    rgba(197, 131, 59, 0.5046393557422969) 44%,
-    rgba(178, 28, 41, 0.5) 86%
-  );
+  background: linear-gradient(to top, #c5833b, #b21c29);
 }
-.index__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto auto auto;
-  grid-template-areas:
-    "header"
-    "main"
-    "album"
-    "merch"
-    "footer";
-}
-
-header {
+.bg-header {
   background-color: var(--color-principal);
-  width: 100%;
-  grid-area: header;
 }
-#header__img {
-  cursor: pointer;
-  width: 12vw;
-  padding: 10px;
-}
-nav {
-  display: flex;
-  flex-flow: row nowrap;
-}
-.navbar {
-  width: 100%;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-nav ul li {
-  margin-right: 2rem;
-}
-
-nav ul li a {
-  text-decoration: none;
+.nav-item a {
   font-size: 2rem;
   color: #fff;
-  text-align: center;
 }
-main {
-  width: 100%;
-  grid-area: main;
-}
-
-/* INDEX */
-.slider {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-}
-
-.slider__content {
-  position: relative;
-  width: 90%;
-  height: 70vh;
-  margin-bottom: 5rem;
-}
-
-.slider__content li {
-  list-style: none;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  width: inherit;
-  height: inherit;
-  transition: opacity 0.5s;
-}
-
-.slider__content li img {
-  margin-left: 6%;
-  width: 100%;
-  height: 65vh;
-  object-fit: cover;
-}
-
-.slider__content li:first-child {
-  opacity: 1;
-}
-
-.slider__content li:target {
-  opacity: 1;
-}
-
-.menu__slider {
-  display: flex;
-  gap: 5px;
-  margin-bottom: 1rem;
-}
-
-.menu__slider li {
-  display: inline-block;
-  text-align: center;
-}
-
-.menu__slider li a {
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-  background-color: var(--color-shadow);
-  padding: 3px;
-  width: 30px;
-  height: 30px;
-  font-size: 20px;
-  border-radius: 100%;
+.nav-item a:hover {
+  color: var(--color-light);
 }
 
 /* ALBUM */
 
-.div__main {
-  grid-area: album;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
 .main__video {
   margin-left: 6rem;
   padding-bottom: 56.25%;
@@ -168,12 +55,8 @@ main {
   width: 100%;
 }
 
-.wrap__video {
-  width: 150%;
-}
-
 .main__titles {
-  height: 50vh;
+  height: 53.5vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -182,97 +65,57 @@ main {
 }
 
 .main__titles h1 {
-  color: var(--color-shadow);
+  color: #fff;
   font-size: 4rem;
   letter-spacing: 20px;
 }
 .main__titles h2 {
-  color: var(--color-shadow);
+  color: #fff;
   font-size: 3rem;
   text-align: center;
 }
 
 .main__titles p {
-  width: 70%;
+  color: #fff;
   font-size: 1.2rem;
 }
 
+.text__merch {
+  position: absolute;
+  height: 70vh;
+  z-index: 11111;
+}
 .merch {
   width: 100%;
   height: 70vh;
   overflow: hidden;
-  grid-area: merch;
-}
-.card__merch__left {
-  display: inline-block;
-  width: 50%;
 }
 
-.card__merch__right {
-  display: inline-block;
-  width: 50%;
-}
-.div__section {
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-flow: row nowrap;
-}
-.text__merch {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 70vh;
-  z-index: 11111;
-}
-
-.div__section .text__merch h2 {
+.text__merch h2 {
   font-size: 3rem;
   color: var(--color-shadow);
   text-align: center;
   letter-spacing: 10px;
 }
 
-.div__section .text__merch h3 {
+.text__merch h3 {
   font-size: 2rem;
   color: var(--color-shadow);
   text-align: center;
   letter-spacing: 15px;
 }
-
-.img__merch {
-  display: inline-block;
-  width: 50%;
+#no-deco {
+  text-decoration: none;
 }
 
-footer {
-  width: 100%;
-  padding: 1em;
-  background-color: var(--color-principal);
-  display: flex;
-  grid-area: footer;
-}
-
-footer p {
+#footer-text {
   color: #fff;
   font-size: 2rem;
-  margin-left: 2rem;
-  text-align: start;
-  width: 10%;
+  text-align: center;
+  margin-left: 1rem;
 }
 
-footer .media__footer {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-footer .media__footer a {
+.media__footer a {
   text-decoration: none;
   font-size: 2rem;
   color: #fff;
@@ -285,42 +128,16 @@ footer .media__footer a {
 
 /* DISCOGRAFIA */
 
-.disco__grid {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-}
-
-.album {
-  grid-area: main;
-}
-.albums {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.albums h1 {
-  width: 80%;
-  text-align: center;
-  letter-spacing: 1rem;
-  padding: 1rem;
-  color: var(--color-shadow);
+.disco-title {
+  color: #fff;
   font-size: 4rem;
+  letter-spacing: 20px;
 }
 
 .albums h2 {
-  width: 80%;
-  color: var(--color-shadow);
-  font-size: 3.5rem;
-  text-align: center;
-  letter-spacing: 1rem;
-  padding: 1rem;
+  color: #fff;
+  font-size: 4rem;
+  letter-spacing: 20px;
 }
 .videos {
   display: flex;
@@ -379,6 +196,7 @@ footer .media__footer a {
     "map"
     "footer";
 }
+
 .bio__main {
   grid-area: bio;
 }
@@ -464,7 +282,7 @@ footer .media__footer a {
   box-shadow: 7px 13px 37px #000;
 }
 
-form {
+#form-contacto {
   width: 20%;
   display: flex;
   flex-flow: column nowrap;
@@ -479,13 +297,13 @@ form {
   bottom: 0;
   left: 0;
 }
-form legend {
+#form-contacto legend {
   text-align: center;
   font-size: 22px;
   margin-bottom: 20px;
 }
 
-form .controls {
+#form-contacto .controls {
   width: 100%;
   background-color: var(--color-light);
   padding: 6px;
@@ -496,7 +314,7 @@ form .controls {
   color: #fff;
 }
 
-form .form__btn {
+#form-contacto .form__btn {
   width: 100%;
   background-color: #c5833b;
   border: none;
@@ -508,217 +326,29 @@ form .form__btn {
 
 /* EVENTOS */
 
-.event__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  gap: 0px 0px;
-  grid-template-areas:
-    "header"
-    "list"
-    "footer";
-}
-
-.list {
-  grid-area: list;
-}
-.container {
-  width: 75%;
-  position: relative;
-  margin-left: 15rem;
-}
 #event__title {
   letter-spacing: 1rem;
-  padding: 1rem;
-  color: var(--color-shadow);
+  color: #fff;
   font-size: 4rem;
-  margin-left: 30%;
+  text-align: center;
 }
 
 .event {
-  color: var(--color-shadow);
-  position: relative;
-  margin-bottom: 1rem;
+  color: #fff;
+  margin-bottom: 2rem;
   border-bottom: #b21c29;
   border-style: none none dotted none;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
 }
 .start {
-  width: 66%;
-  position: relative;
   font-size: 25px;
-  margin-left: 1rem;
-  padding: 5px;
+  padding: 3px;
+}
+.start h6 {
+  font-size: 2.5rem;
 }
 
-.location {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding: 5px;
-}
-
-.place {
-  font-size: 20px;
-}
-
-.city {
-  margin-left: 25rem;
-  font-size: 20px;
-}
-
-.button {
-  position: absolute;
-  right: 10px;
-  top: 8px;
-}
-.button a {
-  border-radius: 3px;
-  display: block;
-  margin: 9px 0 0 9px;
-  padding: 5px 10px;
+.boton a {
   text-align: center;
-  width: 110px;
   color: white;
-  background-color: var(--color-shadow);
-}
-
-.button a:hover {
-  color: #000;
-  background-color: var(--color-principal);
-}
-
-@media screen and (max-width: 1023px) {
-  /* NAVBAR */
-  nav {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  #header__img {
-    cursor: pointer;
-    width: 15vh;
-    padding: 10px;
-  }
-
-  .navbar {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-  }
-
-  nav ul li {
-    margin-right: 0rem;
-  }
-
-  nav ul li a {
-    font-size: 1.5rem;
-  }
-
-  .div__main {
-    flex-direction: column;
-  }
-
-  .wrap__video {
-    width: 80%;
-  }
-
-  .main__titles {
-    height: 30vh;
-    margin-bottom: 5rem;
-    margin-top: 5rem;
-  }
-
-  .main__titles h1 {
-    color: var(--color-shadow);
-    font-size: 3rem;
-    letter-spacing: 10px;
-  }
-  .main__titles h2 {
-    color: var(--color-shadow);
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .main__titles p {
-    width: 60%;
-    font-size: 1.2rem;
-  }
-
-  .main__video {
-    margin-left: 0;
-  }
-
-  .media__footer {
-    margin-right: 1rem;
-  }
-  /* DISCOGRAFIA */
-
-  /* EVENT */
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-left: 0;
-  }
-  .button {
-    position: absolute;
-    left: 250px;
-    top: 40px;
-  }
-  .event {
-    justify-content: center;
-    align-items: center;
-    border-bottom: #b21c29;
-    border-style: none dotted dotted none;
-  }
-
-  /* GALERIA */
-
-  .galery img {
-    width: 450px;
-    border-radius: 25%;
-    filter: grayscale();
-  }
-
-  /* NOSOTROS */
-  form {
-    width: 70%;
-    position: relative;
-  }
-  #map {
-    width: 80%;
-  }
-  #ul__name {
-    display: flex;
-    flex-flow: column wrap;
-    gap: 4rem;
-    list-style: none;
-  }
-  .ul__img {
-    width: 400px;
-  }
-  #biography p {
-    width: 80%;
-  }
-
-  /* DISCOGRAFIA */
-
-  .videos {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .navbar {
-    gap: 0.5rem;
-  }
+  text-decoration: none;
 }

@@ -7,33 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KOMBIX</title>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <div class="disco__grid">
-        <header>
-            <nav data-aos="fade-down">
-                <img src="../img/logo3.svg" alt="logo" id="header__img">
-                <ul class="navbar">
-                    <!--<li>
-                    <img src="../img/logo3.svg" alt="logo" id="header__img">
-               </li> -->
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./discografia.html">Discografia</a></li>
-                    <li><a href="./eventos.html">Eventos</a></li>
-                    <li><a href="./galeria.html">Galeria</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
 
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-header">
+            <div class="container-fluid ">
+                <a class="navbar-brand " href="#"><img src="../img/logo3.svg" alt="logo" width="150px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./discografia.html">Discografia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-        <main class="album">
-            <div class="albums">
-                <h1 data-aos="zoom-out" data-aos-duration="2500">ALBUMS DE ESTUDIO</h1>
-                <div class="videos">
+    <main class="container-fluid">
+        <div class="row d-flex justify-content-center align-items-center text-center mt-5 albums ">
+            <h2 data-aos="zoom-out" data-aos-duration="2500">ALBUMS DE ESTUDIO</h1>
+                <div class="col-sm-12 mt-5 videos">
 
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/YaqMliC5LSo"
                         title="YouTube video player" frameborder="0"
@@ -53,7 +70,7 @@
 
                 </div>
                 <h2 data-aos="zoom-out" data-aos-duration="2500">VIDEOCLIPS</h2>
-                <div class="videos">
+                <div class="col-sm-12 mt-5 videos">
 
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/bAQuSjpfFa0"
                         title="YouTube video player" frameborder="0"
@@ -97,19 +114,31 @@
                         allowfullscreen></iframe>
 
                 </div>
-            </div>
+        </div>
 
-        </main>
+    </main>
 
-        <footer>
-            <p>vvvv®</p>
-            <div class="media__footer">
-                <a href="https://www.twitter.com/loskombix" target="_blank"><i class="bi bi-twitter"></i></a>
-                <a href="https://www.instagram.com/kombix/" target="_blank"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.facebook.com/loskombix" target="_blank"><i class="bi bi-facebook"></i></a>
+    <footer>
+        <div class="container-fluid bg-header p-2">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-xs-12 col-sm-6 d-flex  justify-content-start align-items-center w-50">
+                    <a href="https://www.instagram.com/vvvv.mov" target="_blank"><img src="../img/vvvv.svg" alt="vvvv"
+                            width="75px"></a>
+                    <p id="footer-text" class="my-auto">vvvv®</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 d-flex  justify-content-end align-items-center media__footer w-50">
+                    <a href="https://www.twitter.com/loskombix" target="_blank"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.instagram.com/kombix/" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/loskombix" target="_blank"><i class="bi bi-facebook"></i></a>
+                </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
