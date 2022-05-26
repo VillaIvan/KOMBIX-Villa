@@ -149,29 +149,7 @@ body {
 }
 
 /* GALERIA */
-.galery__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header"
-    "img"
-    "footer";
-}
 
-.img__grid {
-  grid-area: img;
-}
-
-.galery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-}
 .galery img {
   width: 500px;
   border-radius: 25%;
@@ -183,53 +161,30 @@ body {
   filter: none;
   transform: scale(1.04);
 }
+@media (max-width: 576px) {
+  .galery img {
+    width: 450px;
+  }
+}
 
 /* NOSOTROS */
 
-.bio__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto auto;
-  grid-template-areas:
-    "header"
-    "bio"
-    "map"
-    "footer";
-}
-
-.bio__main {
-  grid-area: bio;
-}
-#biography {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 #biography h1 {
   padding: 1rem;
-  color: var(--color-shadow);
+  color: #fff;
   font-size: 4rem;
   letter-spacing: 20px;
   justify-content: center;
 }
 
 #biography p {
-  width: 100%;
-  display: flex;
-  justify-content: center;
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 2rem;
-  color: var(--color-shadow);
+  color: #fff;
 }
 
 #ul__name {
-  display: flex;
-  flex-flow: row nowrap;
-  gap: 4rem;
   list-style: none;
 }
 
@@ -249,7 +204,7 @@ body {
 }
 #biography ul li {
   font-size: 1.5rem;
-  color: var(--color-shadow);
+  color: #fff;
 }
 
 #contact {
@@ -283,7 +238,6 @@ body {
 }
 
 #form-contacto {
-  width: 20%;
   display: flex;
   flex-flow: column nowrap;
   padding: 30px;
@@ -293,9 +247,6 @@ body {
   color: #fff;
   background-color: var(--color-principal);
   box-shadow: 7px 13px 37px #000;
-  position: fixed;
-  bottom: 0;
-  left: 0;
 }
 #form-contacto legend {
   text-align: center;

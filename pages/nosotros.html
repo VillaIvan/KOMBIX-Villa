@@ -16,16 +16,16 @@
 <body>
     <div class="bio__grid">
         <header>
-            <nav class="navbar navbar-expand-lg bg-header">
-                <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-header" data-aos="fade-down">
+                <div class="container-fluid ">
                     <a class="navbar-brand " href="#"><img src="../img/logo3.svg" alt="logo" width="150px"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto mb-2 mb-lg-0 text-center">
                             <li class="nav-item">
                                 <a class="nav-link" href="../index.html">Inicio</a>
                             </li>
@@ -45,56 +45,49 @@
                     </div>
                 </div>
             </nav>
-            <!--BARRA DE NAVEGACION OLD
-            <nav data-aos="fade-down">
-                <img src="./img/logo3.svg" alt="logo" id="header__img">
-                <ul class="navbar">
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/discografia.html">Discografia</a></li>
-                    <li><a href="./pages/eventos.html">Eventos</a></li>
-                    <li><a href="./pages/galeria.html">Galeria</a></li>
-                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
-
-                </ul>
-            </nav>-->
         </header>
 
-        <main class="bio__main">
-            <section id="bio">
-                <div id="biography">
-                    <h1 data-aos="zoom-out" data-aos-duration="2500">Biografia</h1>
-                    <p data-aos="fade-up" data-aos-duration="2500">Somos una banda
-                        originaria de Berisso, provincia de Buenos aires que nacio a mediados del 2013 y
-                        que
-                        centra toda su potencial en transformar la escena del rock local <br>
-                        Nuestros integrantes son:</p>
-                    <ul id="ul__name">
-                        <li>
-                            <h2 data-aos="zoom-out-right"> Ariel en guitarra </h2> <img src="../img/img.svg"
-                                class="ul__img" alt="" data-aos="zoom-out-left">
-                        </li>
-                        <li>
-                            <h2 data-aos="zoom-out-right">Matias en el bajo</h2> <img src="../img/img.svg"
-                                class="ul__img" alt="" data-aos="zoom-out-left">
-                        </li>
-                        <li>
-                            <h2 data-aos="zoom-out-right">Pedro en los teclados</h2> <img src="../img/img.svg"
-                                class="ul__img" alt="" data-aos="zoom-out-left">
-                        </li>
-                        <li>
-                            <h2 data-aos="zoom-out-right">Martin en la voz</h2> <img src="../img/img.svg"
-                                class="ul__img" alt="" data-aos="zoom-out-left">
-                        </li>
-                        <li>
-                            <h2 data-aos="zoom-out-right">Dalo en bateria</h2> <img src="../img/img.svg" class="ul__img"
-                                alt="" data-aos="zoom-out-left">
-                        </li>
-                    </ul>
+        <main>
+            <section class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 d-flex flex-column justify-content-center align-items-center text-center mx-auto"
+                        id="biography">
+                        <h1 data-aos="zoom-out" data-aos-duration="2500">Biografia</h1>
+                        <p data-aos="fade-up" data-aos-duration="2500">Somos una banda
+                            originaria de Berisso, provincia de Buenos aires que nacio a mediados del 2013 y
+                            que
+                            centra toda su potencial en transformar la escena del rock local <br>
+                            Nuestros integrantes son:</p>
+                        <ul class="col-xs-12 col-sm-10 d-flex flex-sm-column flex-md-row flex-wrap justify-content-center align-items-center mx-auto"
+                            id="ul__name">
+                            <li>
+                                <h2 data-aos="zoom-out-right"> Ariel en guitarra </h2> <img src="../img/img.svg"
+                                    class="ul__img" alt="" data-aos="zoom-out-left">
+                            </li>
+                            <li>
+                                <h2 data-aos="zoom-out-right">Matias en el bajo</h2> <img src="../img/img.svg"
+                                    class="ul__img" alt="" data-aos="zoom-out-left">
+                            </li>
+                            <li>
+                                <h2 data-aos="zoom-out-right">Pedro en los teclados</h2> <img src="../img/img.svg"
+                                    class="ul__img" alt="" data-aos="zoom-out-left">
+                            </li>
+                            <li>
+                                <h2 data-aos="zoom-out-right">Martin en la voz</h2> <img src="../img/img.svg"
+                                    class="ul__img" alt="" data-aos="zoom-out-left">
+                            </li>
+                            <li>
+                                <h2 data-aos="zoom-out-right">Dalo en bateria</h2> <img src="../img/img.svg"
+                                    class="ul__img" alt="" data-aos="zoom-out-left">
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
             </section>
 
             <section id="contact">
-                <div id="map" data-aos="zoom-in-right">
+                <div class="mx-auto" id="map" data-aos="zoom-in-right">
                     <p>y nos podes encontrar en:</p>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104718.9206923437!2d-57.9302468515925!3d-34.894746563104825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e5b0c4672cb1%3A0xf36d7ca05f7032cc!2sBerisso%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1650244641348!5m2!1ses!2sar"
@@ -103,24 +96,31 @@
 
 
                 </div>
-                <form id="form-contacto" data-aos="zoom-in-left">
-                    <legend>Para propuestas artisticas, deja tus datos</legend>
-                    <div>
-                        <input type="text" class="controls" name="nombre" placeholder="Nombre y apellido">
-                    </div>
-                    <div>
-                        <input type="email" class="controls" name="email" placeholder="Correo electronico">
-                    </div>
-                    <div>
-                        <input type="text" class="controls" name="lugar" placeholder="Lugar del evento">
-                    </div>
-                    <div>
-                        <input type="text" class="controls" name="propuesta" placeholder="Indica tu propuesta">
-                    </div>
-                    <input type="submit" class="form__btn" value="Enviar">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-xs-12 col-sm-10 d-flex flex-column justify-content-center align-items-center">
+                            <form id="form-contacto" data-aos="zoom-in-left">
+                                <legend>Para propuestas artisticas, deja tus datos</legend>
+                                <div>
+                                    <input type="text" class="controls" name="nombre" placeholder="Nombre y apellido">
+                                </div>
+                                <div>
+                                    <input type="email" class="controls" name="email" placeholder="Correo electronico">
+                                </div>
+                                <div>
+                                    <input type="text" class="controls" name="lugar" placeholder="Lugar del evento">
+                                </div>
+                                <div>
+                                    <input type="text" class="controls" name="propuesta"
+                                        placeholder="Indica tu propuesta">
+                                </div>
+                                <input type="submit" class="form__btn" value="Enviar">
 
 
-                </form>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
