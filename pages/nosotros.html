@@ -7,139 +7,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KOMBIX</title>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS only -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <div class="bio__grid">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-header" data-aos="fade-down">
-                <div class="container-fluid ">
-                    <a class="navbar-brand " href="#"><img src="../img/logo3.svg" alt="logo" width="150px"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto mb-2 mb-lg-0 text-center">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./discografia.html">Discografia</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./eventos.html">Eventos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./galeria.html">Galeria</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                            </li>
-                        </ul>
-                    </div>
+    <header>
+        <!-- BARRA DE NAVEGACION -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-header" data-aos="fade-down">
+            <div class="container-fluid ">
+                <a class="navbar-brand " href="#"><img src="../img/logo3.svg" alt="logo" width="150px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./discografia.html">Discografia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
 
-        <main>
-            <section class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 d-flex flex-column justify-content-center align-items-center text-center mx-auto"
-                        id="biography">
-                        <h1 data-aos="zoom-out" data-aos-duration="2500">Biografia</h1>
-                        <p data-aos="fade-up" data-aos-duration="2500">Somos una banda
-                            originaria de Berisso, provincia de Buenos aires que nacio a mediados del 2013 y
-                            que
-                            centra toda su potencial en transformar la escena del rock local <br>
-                            Nuestros integrantes son:</p>
-                        <ul class="col-xs-12 col-sm-10 d-flex flex-sm-column flex-md-row flex-wrap justify-content-center align-items-center mx-auto"
-                            id="ul__name">
-                            <li>
-                                <h2 data-aos="zoom-out-right"> Ariel en guitarra </h2> <img src="../img/img.svg"
-                                    class="ul__img" alt="" data-aos="zoom-out-left">
-                            </li>
-                            <li>
-                                <h2 data-aos="zoom-out-right">Matias en el bajo</h2> <img src="../img/img.svg"
-                                    class="ul__img" alt="" data-aos="zoom-out-left">
-                            </li>
-                            <li>
-                                <h2 data-aos="zoom-out-right">Pedro en los teclados</h2> <img src="../img/img.svg"
-                                    class="ul__img" alt="" data-aos="zoom-out-left">
-                            </li>
-                            <li>
-                                <h2 data-aos="zoom-out-right">Martin en la voz</h2> <img src="../img/img.svg"
-                                    class="ul__img" alt="" data-aos="zoom-out-left">
-                            </li>
-                            <li>
-                                <h2 data-aos="zoom-out-right">Dalo en bateria</h2> <img src="../img/img.svg"
-                                    class="ul__img" alt="" data-aos="zoom-out-left">
-                            </li>
-                        </ul>
-                    </div>
+    <main>
+        <!-- INTEGRANTES DE LA BANDA Y BIO -->
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 d-flex flex-column justify-content-center align-items-center text-center mx-auto"
+                    id="biography">
+                    <h1 data-aos="zoom-out" data-aos-duration="2500">Biografia</h1>
+                    <p data-aos="fade-up" data-aos-duration="2500">Somos una banda
+                        originaria de Berisso, provincia de Buenos aires que nacio a mediados del 2013 y
+                        que
+                        centra toda su potencial en transformar la escena del rock local <br>
+                        Nuestros integrantes son:</p>
+                    <ul class="col-xs-12 col-sm-10 d-flex flex-sm-column flex-md-row flex-wrap justify-content-center align-items-center mx-auto"
+                        id="ul__name">
+                        <li>
+                            <h2 data-aos="zoom-out-right"> Ariel en guitarra </h2> <img src="../img/img.svg"
+                                class="ul__img" alt="" data-aos="zoom-out-left">
+                        </li>
+                        <li>
+                            <h2 data-aos="zoom-out-right">Matias en el bajo</h2> <img src="../img/img.svg"
+                                class="ul__img" alt="" data-aos="zoom-out-left">
+                        </li>
+                        <li>
+                            <h2 data-aos="zoom-out-right">Pedro en los teclados</h2> <img src="../img/img.svg"
+                                class="ul__img" alt="" data-aos="zoom-out-left">
+                        </li>
+                        <li>
+                            <h2 data-aos="zoom-out-right">Martin en la voz</h2> <img src="../img/img.svg"
+                                class="ul__img" alt="" data-aos="zoom-out-left">
+                        </li>
+                        <li>
+                            <h2 data-aos="zoom-out-right">Dalo en bateria</h2> <img src="../img/img.svg" class="ul__img"
+                                alt="" data-aos="zoom-out-left">
+                        </li>
+                    </ul>
                 </div>
+            </div>
 
-            </section>
+        </section>
 
-            <section id="contact">
-                <div class="mx-auto" id="map" data-aos="zoom-in-right">
-                    <p>y nos podes encontrar en:</p>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104718.9206923437!2d-57.9302468515925!3d-34.894746563104825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e5b0c4672cb1%3A0xf36d7ca05f7032cc!2sBerisso%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1650244641348!5m2!1ses!2sar"
-                        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- MAPA -->
+
+        <section id="contact">
+            <div class="mx-auto" id="map" data-aos="zoom-in-right">
+                <p>y nos podes encontrar en:</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104718.9206923437!2d-57.9302468515925!3d-34.894746563104825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e5b0c4672cb1%3A0xf36d7ca05f7032cc!2sBerisso%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1650244641348!5m2!1ses!2sar"
+                    width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- FORMULARIO -->
+
+            <div class="container">
+                <div class="row ">
+                    <div class="col-xs-12 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+                        <form id="form-contacto" data-aos="zoom-in-left">
+                            <legend>Para propuestas artisticas, deja tus datos</legend>
+                            <div>
+                                <input type="text" class="controls" name="nombre" placeholder="Nombre y apellido">
+                            </div>
+                            <div>
+                                <input type="email" class="controls" name="email" placeholder="Correo electronico">
+                            </div>
+                            <div>
+                                <input type="text" class="controls" name="lugar" placeholder="Lugar del evento">
+                            </div>
+                            <div>
+                                <input type="text" class="controls" name="propuesta" placeholder="Indica tu propuesta">
+                            </div>
+                            <input type="submit" class="form__btn" value="Enviar">
 
 
-                </div>
-                <div class="container">
-                    <div class="row ">
-                        <div class="col-xs-12 col-sm-10 d-flex flex-column justify-content-center align-items-center">
-                            <form id="form-contacto" data-aos="zoom-in-left">
-                                <legend>Para propuestas artisticas, deja tus datos</legend>
-                                <div>
-                                    <input type="text" class="controls" name="nombre" placeholder="Nombre y apellido">
-                                </div>
-                                <div>
-                                    <input type="email" class="controls" name="email" placeholder="Correo electronico">
-                                </div>
-                                <div>
-                                    <input type="text" class="controls" name="lugar" placeholder="Lugar del evento">
-                                </div>
-                                <div>
-                                    <input type="text" class="controls" name="propuesta"
-                                        placeholder="Indica tu propuesta">
-                                </div>
-                                <input type="submit" class="form__btn" value="Enviar">
-
-
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="container-fluid bg-header p-2">
-                <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-xs-12 col-sm-6 d-flex  justify-content-start align-items-center w-50">
-                        <a href="https://www.instagram.com/vvvv.mov" target="_blank"><img src="../img/vvvv.svg"
-                                alt="vvvv" width="75px"></a>
-                        <p id="footer-text" class="my-auto">vvvv®</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 d-flex  justify-content-end align-items-center media__footer w-50">
-                        <a href="https://www.twitter.com/loskombix" target="_blank"><i class="bi bi-twitter"></i></a>
-                        <a href="https://www.instagram.com/kombix/" target="_blank"><i class="bi bi-instagram"></i></a>
-                        <a href="https://www.facebook.com/loskombix" target="_blank"><i class="bi bi-facebook"></i></a>
+                        </form>
                     </div>
                 </div>
             </div>
-        </footer>
-    </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="container-fluid bg-header p-2">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-xs-12 col-sm-6 d-flex  justify-content-start align-items-center w-50">
+                    <a href="https://www.instagram.com/vvvv.mov" target="_blank"><img src="../img/vvvv.svg" alt="vvvv"
+                            width="75px"></a>
+                    <p id="footer-text" class="my-auto">vvvv®</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 d-flex  justify-content-end align-items-center media__footer w-50">
+                    <a href="https://www.twitter.com/loskombix" target="_blank"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.instagram.com/kombix/" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/loskombix" target="_blank"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

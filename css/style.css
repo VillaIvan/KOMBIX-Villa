@@ -215,7 +215,6 @@ body {
   align-items: center;
 }
 #map {
-  grid-area: map;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,7 +227,7 @@ body {
   width: 100%;
   text-align: center;
   font-size: 2.5rem;
-  color: var(--color-shadow);
+  color: #fff;
 }
 
 #map iframe {
