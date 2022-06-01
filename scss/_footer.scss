@@ -1,0 +1,24 @@
+footer {
+  background-color: var(--color-principal);
+}
+
+#footer-text {
+  color: var(--color-text);
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 1rem;
+}
+
+.media__footer {
+  width: 50%;
+  a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--color-text);
+    margin-right: 1rem;
+  }
+}
+
+.bi {
+  font-size: 2rem;
+}

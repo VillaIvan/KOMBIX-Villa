@@ -1,0 +1,30 @@
+:root {
+  --color-principal: #b21c29;
+  --color-light: #c5833b;
+  --color-shadow: #904a20;
+  --color-text: #fff;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", cursive;
+  text-decoration: none;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  background: linear-gradient(to top, #c5833b, #b21c29);
+}

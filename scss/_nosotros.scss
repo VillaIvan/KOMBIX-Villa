@@ -1,0 +1,101 @@
+#biography {
+  h1 {
+    padding: 1rem;
+    color: var(--color-text);
+    font-size: 4rem;
+    letter-spacing: 20px;
+    justify-content: center;
+  }
+  p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--color-text);
+  }
+  ul li {
+    font-size: 1.5rem;
+    color: var(--color-text);
+  }
+}
+
+#ul__name {
+  list-style: none;
+  li img {
+    width: 300px;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+#contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  #map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 2rem;
+    p {
+      width: 100%;
+      text-align: center;
+      font-size: 2.5rem;
+      color: #fff;
+    }
+    iframe {
+      width: 100%;
+      align-items: center;
+      box-shadow: 7px 13px 37px #000;
+    }
+  }
+}
+
+#form-contacto {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 30px;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: var(--color-principal);
+  box-shadow: 7px 13px 37px #000;
+  legend {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .controls {
+    width: 100%;
+    background-color: var(--color-light);
+    padding: 6px;
+    border-radius: 3px;
+    margin-bottom: 16px;
+    border: 1px solid var(--color-shadow);
+    font-size: 18px;
+    color: var(--color-text);
+  }
+  .form__btn {
+    width: 100%;
+    background-color: var(--color-light);
+    border: none;
+    padding: 12px;
+    color: var(--color-text);
+    margin: 16px 0;
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 768px) {
+  #form-contacto {
+    width: 70%;
+    div input {
+      text-align: center;
+    }
+  }
+}

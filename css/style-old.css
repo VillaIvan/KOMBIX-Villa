@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+:root {
+  --color-principal: #b21c29;
+  --color-light: #c5833b;
+  --color-shadow: #904a20;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", cursive;
+  text-decoration: none;
+}
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  background: linear-gradient(to top, #c5833b, #b21c29);
+}
+.bg-header {
+  background-color: var(--color-principal);
+}
+.nav-item a {
+  font-size: 2rem;
+  color: #fff;
+}
+.nav-item a:hover {
+  color: var(--color-light);
+}
+
+/* ALBUM */
+
+.main__video {
+  margin-left: 6rem;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0px;
+}
+
+.main__video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.main__titles {
+  height: 53.5vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__titles h1 {
+  color: #fff;
+  font-size: 4rem;
+  letter-spacing: 20px;
+}
+.main__titles h2 {
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.main__titles p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.text__merch {
+  position: absolute;
+  height: 70vh;
+  z-index: 11111;
+}
+.merch {
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.text__merch h2 {
+  font-size: 3rem;
+  color: var(--color-shadow);
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+.text__merch h3 {
+  font-size: 2rem;
+  color: var(--color-shadow);
+  text-align: center;
+  letter-spacing: 15px;
+}
+#no-deco {
+  text-decoration: none;
+}
+
+#footer-text {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 1rem;
+}
+
+.media__footer a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.bi {
+  font-size: 2rem;
+}
+
+/* DISCOGRAFIA */
+
+.disco-title {
+  color: #fff;
+  font-size: 4rem;
+  letter-spacing: 20px;
+}
+
+.albums h2 {
+  color: #fff;
+  font-size: 4rem;
+  letter-spacing: 20px;
+}
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* GALERIA */
+
+.galery img {
+  width: 500px;
+  border-radius: 25%;
+  filter: grayscale();
+}
+
+.galery img:hover {
+  filter: opacity(0.9);
+  filter: none;
+  transform: scale(1.04);
+}
+@media (max-width: 576px) {
+  .galery img {
+    width: 450px;
+  }
+}
+
+/* NOSOTROS */
+
+#biography h1 {
+  padding: 1rem;
+  color: #fff;
+  font-size: 4rem;
+  letter-spacing: 20px;
+  justify-content: center;
+}
+
+#biography p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+#ul__name {
+  list-style: none;
+}
+
+.ul__img {
+  width: 300px;
+}
+
+#ul__name li img:hover {
+  transform: scale(1.2);
+}
+
+#bio div ul li {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#biography ul li {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+#contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+#map p {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+#map iframe {
+  width: 100%;
+  align-items: center;
+  box-shadow: 7px 13px 37px #000;
+}
+
+#form-contacto {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 30px;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: var(--color-principal);
+  box-shadow: 7px 13px 37px #000;
+}
+#form-contacto legend {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+#form-contacto .controls {
+  width: 100%;
+  background-color: var(--color-light);
+  padding: 6px;
+  border-radius: 3px;
+  margin-bottom: 16px;
+  border: 1px solid var(--color-shadow);
+  font-size: 18px;
+  color: #fff;
+}
+
+#form-contacto .form__btn {
+  width: 100%;
+  background-color: #c5833b;
+  border: none;
+  padding: 12px;
+  color: #fff;
+  margin: 16px 0;
+  font-size: 22px;
+}
+
+/* EVENTOS */
+
+#event__title {
+  letter-spacing: 1rem;
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.event {
+  color: #fff;
+  margin-bottom: 2rem;
+  border-bottom: #b21c29;
+  border-style: none none dotted none;
+}
+.start {
+  font-size: 25px;
+  padding: 3px;
+}
+.start h6 {
+  font-size: 2.5rem;
+}
+
+.boton a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}

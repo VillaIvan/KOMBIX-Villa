@@ -1,0 +1,28 @@
+#event__title {
+  letter-spacing: 1rem;
+  color: var(--color-text);
+  font-size: 4rem;
+  text-align: center;
+}
+
+.event {
+  color: var(--color-text);
+  margin-bottom: 2rem;
+  border-bottom: var(--color-principal);
+  border-style: none none dotted none;
+  .start {
+    font-size: 25px;
+    padding: 3px;
+    h6 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.boton {
+  a {
+    text-align: center;
+    color: var(--color-text);
+    text-decoration: none;
+  }
+}
