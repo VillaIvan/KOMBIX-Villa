@@ -1,0 +1,11 @@
+@mixin flex-center($direction: column, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin bio-mix($font: 1.5rem, $color: map-get($font-colors, "text")) {
+  font-size: $font;
+  color: $color;
+}

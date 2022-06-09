@@ -1,14 +1,14 @@
 #event__title {
-  letter-spacing: 1rem;
-  color: var(--color-text);
+  letter-spacing: 20px;
+  color: map-get($font-colors, "text");
   font-size: 4rem;
   text-align: center;
 }
 
 .event {
-  color: var(--color-text);
+  color: map-get($font-colors, "text");
   margin-bottom: 2rem;
-  border-bottom: var(--color-principal);
+  border-bottom: map-get($font-colors, "main");
   border-style: none none dotted none;
   .start {
     font-size: 25px;
@@ -20,9 +20,11 @@
 }
 
 .boton {
+  width: 100%;
   a {
+    @extend .boton;
     text-align: center;
-    color: var(--color-text);
+    color: map-get($font-colors, "text");
     text-decoration: none;
   }
 }

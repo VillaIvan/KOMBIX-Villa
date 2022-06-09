@@ -2,17 +2,15 @@
   display: flex;
   text-align: center;
   h2 {
-    color: #fff;
+    color: map-get($font-colors, "text");
     font-size: 4rem;
     letter-spacing: 20px;
   }
 }
 
 .videos {
-  display: flex;
+  @include flex-center(row);
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   gap: 2rem;
   margin-bottom: 2rem;
 }

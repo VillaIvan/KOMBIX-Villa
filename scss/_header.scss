@@ -1,11 +1,11 @@
 nav {
-  background-color: var(--color-principal);
+  background-color: map-get($font-colors, "main");
 }
 
 .nav-item a {
   font-size: 2rem;
-  color: var(--color-text);
+  color: map-get($font-colors, "text");
   &:hover {
-    color: var(--color-light);
+    color: map-get($font-colors, "light");
   }
 }

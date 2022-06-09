@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
-:root {
-  --color-principal: #b21c29;
-  --color-light: #c5833b;
-  --color-shadow: #904a20;
-  --color-text: #fff; }
-
 * {
   margin: 0px;
   padding: 0px;
@@ -27,19 +21,19 @@ body {
   background: linear-gradient(to top, #c5833b, #b21c29); }
 
 nav {
-  background-color: var(--color-principal); }
+  background-color: #b21c29; }
 
 .nav-item a {
   font-size: 2rem;
-  color: var(--color-text); }
+  color: #fff; }
   .nav-item a:hover {
-    color: var(--color-light); }
+    color: #c5833b; }
 
 footer {
-  background-color: var(--color-principal); }
+  background-color: #b21c29; }
 
 #footer-text {
-  color: var(--color-text);
+  color: #fff;
   font-size: 2rem;
   text-align: center;
   margin-left: 1rem; }
@@ -49,7 +43,7 @@ footer {
   .media__footer a {
     text-decoration: none;
     font-size: 2rem;
-    color: var(--color-text);
+    color: #fff;
     margin-right: 1rem; }
 
 .bi {
@@ -72,18 +66,18 @@ footer {
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
   .main__titles h1 {
-    color: var(--color-text);
+    color: #fff;
     font-size: 4rem;
     letter-spacing: 20px; }
   .main__titles h2 {
-    color: var(--color-text);
+    color: #fff;
     font-size: 3rem;
     text-align: center; }
   .main__titles p {
-    color: var(--color-text);
+    color: #fff;
     font-size: 1.2rem; }
 
 .text__merch {
@@ -92,12 +86,12 @@ footer {
   z-index: 11111; }
   .text__merch h2 {
     font-size: 3rem;
-    color: var(--color-shadow);
+    color: #904a20;
     text-align: center;
     letter-spacing: 10px; }
   .text__merch h3 {
     font-size: 2rem;
-    color: var(--color-shadow);
+    color: #904a20;
     text-align: center;
     letter-spacing: 15px; }
   .text__merch a {
@@ -118,22 +112,23 @@ footer {
 
 .videos {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 2rem;
   margin-bottom: 2rem; }
 
 #event__title {
-  letter-spacing: 1rem;
-  color: var(--color-text);
+  letter-spacing: 20px;
+  color: #fff;
   font-size: 4rem;
   text-align: center; }
 
 .event {
-  color: var(--color-text);
+  color: #fff;
   margin-bottom: 2rem;
-  border-bottom: var(--color-principal);
+  border-bottom: #b21c29;
   border-style: none none dotted none; }
   .event .start {
     font-size: 25px;
@@ -141,10 +136,12 @@ footer {
     .event .start h6 {
       font-size: 2.5rem; }
 
-.boton a {
-  text-align: center;
-  color: var(--color-text);
-  text-decoration: none; }
+.boton, .boton a {
+  width: 100%; }
+  .boton a {
+    text-align: center;
+    color: #fff;
+    text-decoration: none; }
 
 .galery img {
   width: 500px;
@@ -161,20 +158,20 @@ footer {
 
 #biography h1 {
   padding: 1rem;
-  color: var(--color-text);
+  color: #fff;
   font-size: 4rem;
   letter-spacing: 20px;
   justify-content: center; }
 
 #biography p {
-  text-align: center;
   font-size: 1.5rem;
-  margin-bottom: 2rem;
-  color: var(--color-text); }
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem; }
 
 #biography ul li {
   font-size: 1.5rem;
-  color: var(--color-text); }
+  color: #fff; }
 
 #ul__name {
   list-style: none; }
@@ -214,7 +211,7 @@ footer {
   margin-bottom: 60px;
   border-radius: 10px;
   color: #fff;
-  background-color: var(--color-principal);
+  background-color: #b21c29;
   box-shadow: 7px 13px 37px #000; }
   #form-contacto legend {
     text-align: center;
@@ -222,19 +219,19 @@ footer {
     margin-bottom: 20px; }
   #form-contacto .controls {
     width: 100%;
-    background-color: var(--color-light);
+    background-color: #c5833b;
     padding: 6px;
     border-radius: 3px;
     margin-bottom: 16px;
-    border: 1px solid var(--color-shadow);
+    border: 1px solid #904a20;
     font-size: 18px;
-    color: var(--color-text); }
+    color: #fff; }
   #form-contacto .form__btn {
     width: 100%;
-    background-color: var(--color-light);
+    background-color: #c5833b;
     border: none;
     padding: 12px;
-    color: var(--color-text);
+    color: #fff;
     margin: 16px 0;
     font-size: 22px; }
 
