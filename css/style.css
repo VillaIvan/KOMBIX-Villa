@@ -107,8 +107,7 @@ footer {
   text-align: center; }
   .albums h2 {
     color: #fff;
-    font-size: 4rem;
-    letter-spacing: 20px; }
+    font-size: 4rem; }
 
 .videos {
   display: flex;
@@ -120,10 +119,11 @@ footer {
   margin-bottom: 2rem; }
 
 #event__title {
-  letter-spacing: 20px;
   color: #fff;
   font-size: 4rem;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 3rem; }
 
 .event {
   color: #fff;
@@ -154,19 +154,18 @@ footer {
 
 @media (max-width: 576px) {
   .galery img {
-    width: 450px; } }
+    width: 375px; } }
 
 #biography h1 {
   padding: 1rem;
   color: #fff;
   font-size: 4rem;
-  letter-spacing: 20px;
-  justify-content: center; }
+  text-align: center; }
 
 #biography p {
   font-size: 1.5rem;
   color: #fff;
-  text-align: center;
+  text-align: justify;
   margin-bottom: 2rem; }
 
 #biography ul li {
@@ -219,13 +218,16 @@ footer {
     margin-bottom: 20px; }
   #form-contacto .controls {
     width: 100%;
-    background-color: #c5833b;
+    background-color: #904a20;
     padding: 6px;
     border-radius: 3px;
     margin-bottom: 16px;
     border: 1px solid #904a20;
     font-size: 18px;
     color: #fff; }
+    #form-contacto .controls::placeholder {
+      color: #fff;
+      opacity: 1; }
   #form-contacto .form__btn {
     width: 100%;
     background-color: #c5833b;

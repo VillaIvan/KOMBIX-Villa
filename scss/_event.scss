@@ -1,8 +1,9 @@
 #event__title {
-  letter-spacing: 20px;
   color: map-get($font-colors, "text");
   font-size: 4rem;
   text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
 }
 
 .event {

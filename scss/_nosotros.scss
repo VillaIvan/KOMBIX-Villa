@@ -3,12 +3,11 @@
     padding: 1rem;
     color: map-get($font-colors, "text");
     font-size: 4rem;
-    letter-spacing: 20px;
-    justify-content: center;
+    text-align: center;
   }
   p {
     @include bio-mix;
-    text-align: center;
+    text-align: justify;
     margin-bottom: 2rem;
   }
   ul li {
@@ -64,13 +63,17 @@
   }
   .controls {
     width: 100%;
-    background-color: map-get($font-colors, "light");
+    background-color: map-get($font-colors, "shadow");
     padding: 6px;
     border-radius: 3px;
     margin-bottom: 16px;
     border: 1px solid map-get($font-colors, "shadow");
     font-size: 18px;
     color: map-get($font-colors, "text");
+    &::placeholder {
+      color: map-get($font-colors, "text");
+      opacity: 1;
+    }
   }
   .form__btn {
     width: 100%;
