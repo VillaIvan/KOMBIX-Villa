@@ -36,6 +36,7 @@
   position: absolute;
   height: 70vh;
   z-index: 11111;
+  left: 0;
   h2 {
     font-size: 3rem;
     color: map-get($font-colors, "shadow");
